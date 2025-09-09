@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <title>JavaScript - Nome e Sobrenome</title>
     </head>
-    <body>
+    <body onload="ajustarFoco()">
         <h1>Entrada, Processamento e Saída</h1>
         <form id="nomes" action="" method="GET">
             <label for="nome">Nome: </label>
@@ -23,6 +23,10 @@
 
         <button id="juntar" onclick="janelaNome()" tabindex="4"> 
             <i class="fa fa-window-maximize" ></i> Prompt
+        </button>
+
+        <button id="juntar" onclick="limparDados(), ajustarFoco()" tabindex="5"> 
+            <i class="fa fa-trash" ></i> Excluir
         </button>
        <!-- #endregion-->
         
