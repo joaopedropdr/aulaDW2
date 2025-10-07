@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <form action="" method="post" class="formulario" id="forms">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" tabindex="1" placeholder="Escreva seu nome completo...">
+        <p id="erro1" class="erro"></p>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" tabindex="2">
+        <p id="erro2" class="erro"></p>
+        
+        <label for="celular">Celular</label>
+        <input type="text" id="celular" name="celular" tabindex="3">
+        <p id="erro3" class="erro"></p>
+        
+        <label for="idade">Idade</label>
+        <input type="number" id="idade" name="idade" max="120" min="0" step="1" tabindex="4">
+        <p id="erro4" class="erro"></p>
+
+        <button type="submit" id="enviar" name="enviar">
+            Enviar (PHP)
+        </button>
+
+        <button type="reset" id="enviar" name="limpar">
+            Limpar (PHP)
+        </button>
+    </form>
+    
+    <button onclick="fraseCompleta()" tabindex="5" id="enviar">
+        Enviar
+    </button>
+
+    <button tabindex="6" onclick="limparDados(), ajustarFoco()">
+        resetar
+    </button>
+
+    <p>Frase completa:</p>
+    <p id="frase"></p>
+    
+    <script src="ex1.js"></script>
+</body>
+</html>

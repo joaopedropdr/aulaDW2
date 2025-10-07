@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Exercicio 9</title>
+</head>
+<body>
+    <form action="" method="post" class="formulario" id="forms">
+        <label for="n1">Numero</label>
+        <input type="text" id="n1" name="n1" tabindex="1" placeholder="Digite um valor">
+
+        <button type="submit" name="arredondarPHP" id="resultado2">
+            Calcular Arredondamento (PHP)
+        </button>
+    </form>
+    
+    <button onclick="arredondarJS()" tabindex="2" id="resultado">
+        Resultado
+    </button>
+    <button onclick="limparDados(), ajustarFoco()" tabindex="3" id="limpar">
+        Limpar
+    </button>
+
+    <p id="valor"></p>
+    
+    <script src="ex9.js"></script>
+</body>
+</html>

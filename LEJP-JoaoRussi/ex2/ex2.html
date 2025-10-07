@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <form action="" method="post" class="formulario" id="forms">
+        <label for="n1">Primeiro numero</label>
+        <input type="text" id="n1" name="n1" tabindex="1" placeholder="Escreva o primeiro valor">
+        <p id="erro1" class="erro"></p>
+
+        <label for="n2">Segundo numero</label>
+        <input type="text" id="n2" name="n2" tabindex="2" placeholder="Escreva o segundo valor">
+        <p id="erro2" class="erro"></p>
+
+        <button id="soma2" name="operacao" value="somar">
+            Somar
+        </button>
+
+        <button id="sub2" name="operacao" value="subtrair">
+            Subtrair
+        </button>
+
+        <button  id="mult2" name="operacao" value="multiplicar">
+            Multiplicar
+        </button>
+
+        <button id="divi2" name="operacao" value="dividir">
+            Dividir
+        </button>
+    </form>
+
+    <button onclick="somar()" tabindex="3" id="soma">
+        Somar
+    </button>
+
+    <button onclick="subtrair()" tabindex="4" id="sub">
+        Subtrair
+    </button>
+
+    <button onclick="multiplicar()" tabindex="5" id="mult">
+        Multiplicar
+    </button>
+
+    <button onclick="divisao()" tabindex="6" id="divi">
+        Dividir
+    </button>
+
+    <button onclick="limparDados(), ajustarFoco()" tabindex="7" id="limpar">
+        Limpar
+    </button>
+
+    <p>Valor:</p>
+    <p id="valor"></p>
+    
+    <script src="ex2.js"></script>
+</body>
+</html>

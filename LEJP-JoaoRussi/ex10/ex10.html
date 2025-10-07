@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    <form action="" method="post" class="formulario" id="forms">
+        <label for="listaNumeros">Digite números separados por vírgula (ex: 5, 2, 8, 0):</label>
+        <input type="text" id="listaNumeros" name="listaNumeros" placeholder="Ex: 10, 5, 2, 0" required>
+
+        <button type="submit" name="contarParesPHP" id="resultado2">
+            Contar Pares (PHP)
+        </button>
+    </form>
+    
+    <button onclick="pares()" tabindex="2" id="resultado">
+        Resultado
+    </button>
+    <button onclick="limparDados(), ajustarFoco()" tabindex="3" id="limpar">
+        Limpar
+    </button>
+
+    <p id="valor"></p>
+    
+    <script src="ex10.js"></script>
+</body>
+</html>

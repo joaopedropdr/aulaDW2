@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* Importando arquivos de fontes e icones */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Roboto, Arial, "Times New Roman";
+    font-size: 14px;
+}
+.erro {
+    color: red;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.botao {
+    margin-top: 10px;  
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <form action="" method="post" class="formulario" id="forms">
+        <label for="base">Base retangulo</label>
+        <input type="text" id="base" name="base" tabindex="1" placeholder="Digite o valor da base">
+        <p id="erro1" class="erro"></p>
+
+        <label for="altura">Altura retangulo</label>
+        <input type="text" id="altura" name="altura" tabindex="2" placeholder="Digite o valor da altura">
+        <p id="erro2" class="erro"></p>
+
+        <button type="submit" name="calcularAreaPHP" id="calcular">
+            Calcular área (PHP)
+        </button>
+    </form>
+    
+    <button onclick="calcularArea()" tabindex="3" id="calcular">
+        Calcular area
+    </button>
+    <button onclick="limparDados(), ajustarFoco()" tabindex="4" id="limpar">
+        Limpar
+    </button>
+
+    <p>Valor:</p>
+    <p id="valor"></p>
+    
+    <script src="ex3.js"></script>
+</body>
+</html>
